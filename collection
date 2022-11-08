@@ -1,0 +1,206 @@
+in the name of alah 
+the folowing code is my practical work whith collection in paython>
+
+colection in paython has four kinds
+1>list  2>sets  3>tuple  4>dictionary
+
+"""collectionns in paython
+we have four kaind of coolections in paytho
+1.set
+2.tuple
+3.dictionary
+4.list
+
+first:list
+"""
+"""
+lis=["sdf","sfsd","sdf","sdfs",3,4,4]
+print(lis)
+
+#accsese list itam
+#we can acsees list itam by indexed becuse list itams are indexed
+x=[1,2,3,4,6,7,8]
+print("this is your forth number index    :",x[4])
+
+#allso we can accses by nagitive index
+print("this is last element by nagitive index   :",x[-1])
+
+#change list itams
+
+y=[90,88,77,66,55,44,33,22]
+print("before any changes  :",y)
+y[1]=100
+print("after updating  :",y)
+
+#insert itam to list
+y.insert(3,5000)
+print("afteer inseerting any element in specipic location \n ",y)
+
+#inserting any items at the end of list
+y.append(4444)
+print("after enserting any items at the end of list \n",y)
+
+#removeing any element from alist by spesific location
+#in removing part we have to functions one is remove and another one is pop
+#first remove
+y.remove(22)
+print("now you deleted your entereing items \n",y)
+
+#second pop() this function is for deleting a spesific element
+y.pop(3)
+print("now you deleted  :",5000,": from under list   \n:",y)
+
+#we also can clear the list by clear fnction
+y.clear()
+print("now you not have any element in your list     :::",y)
+
+"""
+#loops in list
+#we can get list items by loop
+
+"""new=[1,2,55,3,43,4,5,6,78,85,99]"""
+"""
+for x in new:
+    print(x)
+else:
+    print("end of loop")
+
+""""""
+for x in range(len(new)):
+    print(new[x])
+else:
+    print("end of the loop")
+"""
+#by while loop
+"""i=0
+while i<len(new):
+    print(new[i])
+    i=i+1"""
+
+    #sortin a list
+"""new.sort()
+print("now the under list be sorted",new)
+"""
+#sorting decrese
+"""new.sort(reverse=True)
+print("now the under list be sorted reversot form from big to small",new)
+"""
+#copy of list
+"""mynew=list(new)
+print("ouer new list elements most be equal to old list\n" ,mynew)"""
+
+#we can also join lists by tow methdes first sum
+"""my=["ahmad","jamil","khan","wardag"]
+sum=new+my
+print("now we join this tow lists :",sum)
+
+for x in my:
+  new.append(x)
+
+print( "now we join this tow lists   :",new)"""
+
+#the second part of collection in payton is   tuple
+"""mytuple=(12,23,45,56,67,78,34,23,12,111,2,4)
+print("this is my first tuole data \n",mytuple)"""
+
+#we can acses tuple elements by tow kind index and nagitive index
+
+"""print("this is my tuple data from specific location by index\n :",mytuple[5])
+print("this is my tuple data from specific location by nagitive location   \n:",mytuple[-3])"""
+"""
+#wen we want to update and remove any element from tuple first we most be change that to list
+x=list(mytuple)
+x.append("ahmad")
+mytuple=tuple(x)
+print("this is ny tuple data after to cnoverting to list and after to tuple and add one enother element  \n",mytuple)
+
+y=list(mytuple)
+y.remove(12)
+mytuple=tuple(y)
+print("now we delet 12 by list from tuple  \n",mytuple)
+
+
+#using loop or while loop
+print("the under operation is done by for loop")
+for w in mytuple:
+    print(w)
+print("the under operation done by using while loop")
+i=0
+while i<len(mytuple):
+    print(mytuple[i])
+    i=i+1
+
+#we also can join tuples
+newtuple=("ali","waris","jamil","khan")
+sum=newtuple+mytuple;
+print("this is the join tuple of newtuple or mytuple    :\n",sum)
+#also we can multiply tuble in thin self
+
+
+
+m=newtuple*2
+print("this is the multiplication of newtuple whit tow   \n",m)"""
+
+#the third part of paython collection is sets"""
+"""myset={12,23,34,45,56,67,8,9,97}
+print(myset)
+print("this is the length of ouer set   :",len(myset))"""
+"""#accesing set elements
+for x in myset:
+    print(x)
+#by true or false (boolean) methode
+
+print(12 in myset)
+
+#we can not change element of set but we can add any element to set
+myset.add("ahmad shah baba")
+myset.add(333)
+print("after enserting any element to set the folllowing are the new set elements  \n",myset)
+#we can tow sets element to one set
+my={"asna","hgarib","atal""jalib"}
+myset.update(my)
+print("tow sets together  :\n",myset)
+
+#we ca also add any another kind of collection to set or other
+mylist=[111,1111,2222,335,4444,7777]
+myset.update(mylist)
+print("the undeer is the elements of list or set togehter   \n",myset)"""
+#also we can remove any element from set by three functions first remove() second discard() third pop() but we
+#can not use pop() becuse that remove the last element in set elements are unorder we can not find over last element
+"""myset.remove(97)
+print("now one element removed from set  :\n",myset)
+myset.discard(56)
+print("now we discard one element from set   :\n",myset)"""
+#the forth part of collection is dictinory"""
+mydic={
+    "color1":"red",
+    "color2":"green",
+    "color3":"blue",
+    "color4":"yellow"
+
+}
+print(mydic)
+print("legth of dictionary :",len(mydic))
+#acses elements
+x=mydic["color1"]
+print("your color one value is   :",x)
+y=mydic.get("color2")
+print("your color is:  :",y)
+#we also can change a ualue of dictionary
+k=mydic.keys()
+print("before adding any value to dictionary   :\n",k)
+mydic["color5"]="black"
+print("after adding new items to dictionary    :\n",k)
+#we also can get value of dictionary
+z=mydic.values()
+print("all vakues that i have in the dictionary   :\n",z)
+#3we also can change or add new value to any items in the dictionary
+#by tow methodes one by adding and another one is uodateing
+mydic["color3"]="white"
+print("this is our dic after changing of a value       \n:",mydic)
+#second way
+mydic.update({"color4":"blackededed"})
+print(mydic)
+#using loops
+for b in mydic:
+    print(mydic[b])
