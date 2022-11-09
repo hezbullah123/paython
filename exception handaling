@@ -1,0 +1,44 @@
+"""from logging import exception
+
+x=10
+if x>5:
+    raise exception("sfsddfferuehmdnfzxc c zx").fromat(x)"""
+
+"""import sys
+assert ('linus in sys.platform'),"this code run only inunix"   """
+
+
+""""    
+///example nummber 1:
+try:
+    a=10/0
+    print(a)
+except ArithmeticError:
+        print("This statement is raising an exception")
+else:
+    print("Welcome")"""
+
+"""Example number2"""
+"""try:
+    a=10/0
+except ArithmeticError:
+    print("not can do ")
+else:
+    print("finished")"""
+
+
+class ErrorInCode(Exception):
+    def __init__(self, data):
+
+
+
+
+
+def __str__(self):
+    return repr(self.data)
+
+
+try:
+    raise ErrorInCode(2000)
+except ErrorInCode as ae:
+    print("Received error:", ae.data)
